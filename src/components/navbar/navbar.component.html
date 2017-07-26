@@ -1,0 +1,12 @@
+<div class="ui massive top fixed menu">
+  <a class="item">Wuddup</a>
+  <div class="ui category search item">
+    <div class="ui transparent icon input">
+      <input class="prompt" type="text" placeholder="Search channels">
+      <i class="search link icon"></i>
+    </div>
+    <div class="results"></div>
+  </div>
+  <a (click)="login()" *ngIf="!user" class="item right">Sign In</a>
+  <a (click)="logout()" *ngIf="user" class="item right">Sign Out</a>
+</div>

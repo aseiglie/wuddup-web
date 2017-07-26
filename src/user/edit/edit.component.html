@@ -1,0 +1,19 @@
+<div class="ui middle aligned center aligned grid">
+  <div *ngIf="user" class="column">
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui input">
+            <input [(ngModel)]="user.username" type="text" name="username" placeholder="Username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui input">
+            <input [(ngModel)]="user.email" type="text" name="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div (click)="updateUser()" class="ui fluid large teal submit button">Update</div>
+      </div>
+    </form>
+  </div>
+</div>
